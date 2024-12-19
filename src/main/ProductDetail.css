@@ -1,0 +1,128 @@
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff5cc; /* Màu nền vàng nhạt */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.back-button:hover {
+    transform: translateX(-5px);
+    color: #d4a017; /* Màu vàng tối hơn khi hover */
+}
+
+.back_icon {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.product-image {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.product-info {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product_hang1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.product_hang1 h2 {
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 20px;
+    color: #d4a017;
+    font-weight: bold;
+}
+
+.brand {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.stock, .soLuongThat, .hinhanhurl {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.hinhanhurl a {
+    color: #d4a017;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.hinhanhurl a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.Mua_ngay {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #d4a017; /* Màu vàng đậm */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.Mua_ngay:hover {
+    background-color: #e0b824; /* Màu vàng sáng hơn khi hover */
+    transform: scale(1.05);
+}
+
+.Mua_ngay a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Mua_ngay svg {
+    margin-left: 8px;
+    font-size: 20px;
+}

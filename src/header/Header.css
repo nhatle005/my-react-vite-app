@@ -1,0 +1,147 @@
+/* Tổng quan header */
+.header {
+    background: #ffc107; /* Màu vàng */
+    color: #000; /* Chữ màu đen */
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo */
+  .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000; /* Màu đen */
+    transition: transform 0.3s ease;
+  }
+  
+  .logo a:hover {
+    transform: scale(1.2); /* Phóng to logo khi hover */
+  }
+  
+  /* Navigation */
+  .nav {
+    display: flex;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #000; /* Màu đen */
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    background-color: #000; /* Nền đen khi hover */
+    color: #ffc107; /* Chữ vàng khi hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Hiệu ứng đổ bóng khi hover */
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  /* Search box styles */
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .search-input {
+    padding: 8px 12px;
+    border: 2px solid #000; /* Viền đen */
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .search-input:focus {
+    border-color: #ffc107; /* Màu vàng khi focus */
+  }
+  
+  .search-button {
+    background-color: #000; /* Màu nền đen */
+    color: #ffc107; /* Chữ màu vàng */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .search-button:hover {
+    background-color: #ffc107; /* Màu nền vàng khi hover */
+    color: #000; /* Chữ màu đen khi hover */
+  }
+
+  /* Dropdown menu styles */
+.menu-dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none; /* Ẩn menu con ban đầu */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffc107; /* Màu nền vàng */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    border-radius: 8px;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 10;
+    width: 200px; /* Chiều rộng menu con */
+  }
+  
+  .menu-dropdown:hover .dropdown-content {
+    display: block; /* Hiển thị menu con khi hover */
+  }
+  
+  .dropdown-content li {
+    padding: 10px 20px;
+  }
+  
+  .dropdown-content li a {
+    text-decoration: none;
+    color: #000; /* Màu chữ đen */
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown-content li a:hover {
+    background-color: #000; /* Nền đen khi hover */
+    color: #ffc107; /* Chữ vàng khi hover */
+    border-radius: 4px;
+  }
+  
+  /* Adjust other styles for header and navigation */
+  .nav-item {
+    position: relative;
+  }
+  
+  

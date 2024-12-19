@@ -1,0 +1,128 @@
+/* Tổng thể */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Màu nền nhẹ nhàng */
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #6a11cb; /* Gradient tím xanh */
+    background-image: linear-gradient(90deg, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    color: #6a11cb;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  /* Hiệu ứng hover */
+  .navbar-button:hover {
+    background-color: #6a11cb;
+    color: white;
+    transform: scale(1.1); /* Phóng to nút khi hover */
+  }
+  
+  /* Hiệu ứng focus */
+  .navbar-button:focus {
+    background-color: #ff8c00; /* Màu cam khi focus */
+    color: white;
+    box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.6); /* Viền sáng khi focus */
+  }
+  
+  /* Hiệu ứng click */
+  .navbar-button:active {
+    background-color: #4a00e0; /* Màu đậm khi nhấn */
+    transform: scale(1.05); /* Làm giảm kích thước nhẹ khi click */
+  }
+  
+  /* Danh sách sản phẩm */
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  .product-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hiệu ứng hover trên sản phẩm */
+  .product-item:hover {
+    transform: translateY(-10px); /* Nâng sản phẩm khi hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Làm đậm bóng đổ khi hover */
+  }
+  
+  .product-item h3 {
+    margin: 0;
+    padding: 10px 15px;
+    background-color: #6a11cb;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .product-item p {
+    margin: 10px 15px;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Đảm bảo ảnh luôn vừa khung */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .img-productList {
+    border-radius: 0 0 10px 10px; /* Góc cong ở phía dưới */
+  }
+  
+  /* Hiệu ứng khi click vào sản phẩm */
+  .product-item:active {
+    transform: scale(0.98); /* Giảm kích thước khi click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Làm mờ bóng đổ khi nhấn */
+  }
+  
+  /* Text khi không có sản phẩm */
+  .product-list p {
+    text-align: center;
+    font-size: 16px;
+    color: #888;
+    font-style: italic;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-wrap: wrap; /* Các nút xuống hàng nếu màn hình hẹp */
+    }
+    .navbar-button {
+      margin-bottom: 10px;
+    }
+  }
+  

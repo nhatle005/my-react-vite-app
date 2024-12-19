@@ -1,0 +1,99 @@
+.footer {
+    background-color: #FFF4D1; /* Màu vàng nhạt */
+    color: #333; /* Chữ màu đen */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .footer-logo h2 {
+    font-size: 2rem;
+    color: #FFA726; /* Màu cam nhạt */
+  }
+  
+  .footer-logo p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .footer-links,
+  .footer-contact,
+  .footer-social {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-links h3,
+  .footer-contact h3,
+  .footer-social h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #FFB74D; /* Màu cam nhạt hơn */
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 5px 0;
+  }
+  
+  .footer-links a {
+    color: #333; /* Màu chữ đen */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #FF7043; /* Đổi sang màu cam đậm khi hover */
+    transform: translateX(5px); /* Hiệu ứng trượt nhẹ */
+  }
+  
+  .footer-contact p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  .footer-social .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .footer-social a {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #FFE0B2; /* Vàng cam nhạt */
+    color: #333; /* Chữ đen */
+    font-size: 1rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .footer-social a:hover {
+    background-color: #FF7043; /* Cam đậm khi hover */
+    color: #FFF; /* Chữ trắng */
+    transform: scale(1.1); /* Phóng to nhẹ khi hover */
+  }
+  
+  .footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #FFD54F;
+    padding-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    color: #333;
+  }
+  

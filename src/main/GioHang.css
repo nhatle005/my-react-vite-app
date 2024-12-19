@@ -1,0 +1,126 @@
+.giohang-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #fff8e1; /* Nền vàng nhạt */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .giohang-container h2 {
+    text-align: center;
+    color: #ff9900; /* Màu vàng cam nổi bật */
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .cart-container {
+    margin-top: 20px;
+  }
+  
+  .cart-items-list,
+  .purchased-items-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-item,
+  .purchased-item {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ffcc80; /* Viền vàng nhạt */
+    border-radius: 8px;
+    background-color: #fffde7; /* Màu nền sáng hơn */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .item-details,
+  .purchased-item-details {
+    width: 100%;
+  }
+  
+  .item-name,
+  .purchased-item-name {
+    font-weight: bold;
+    color: #ff6f00; /* Màu cam đậm */
+    margin-bottom: 5px;
+  }
+  
+  .item-price,
+  .item-stock,
+  .item-quantity,
+  .item-total,
+  .purchased-item-price,
+  .purchased-item-quantity,
+  .purchased-item-total {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  .quantity-input {
+    width: 50px;
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid #ffc107; /* Viền vàng */
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .remove-btn,
+  .complete-purchase-btn,
+  .clear-history-btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #ffcc00; /* Màu vàng */
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .remove-btn:hover,
+  .complete-purchase-btn:hover,
+  .clear-history-btn:hover {
+    background-color: #ffb300; /* Màu cam đậm hơn khi hover */
+    color: #fff;
+  }
+  
+  .empty-cart-message,
+  .no-purchased-message {
+    text-align: center;
+    font-size: 1rem;
+    color: #777;
+    margin-top: 20px;
+  }
+  
+  .complete-purchase-btn {
+    display: block;
+    margin: 20px auto 0;
+    width: fit-content;
+  }
+  
+  .clear-history-btn {
+    display: block;
+    margin: 20px auto 0;
+    width: fit-content;
+  }
+  
+  .purchased-items-list {
+    margin-top: 20px;
+  }
+  
+  /* Hiệu ứng hover cho sản phẩm */
+  .cart-item:hover,
+  .purchased-item:hover {
+    background-color: #ffecb3; /* Màu vàng sáng hơn */
+    border-color: #ffa726; /* Viền cam nổi bật */
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+  }
+  
